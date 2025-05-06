@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { Heart, Confetti } from "lucide-react";
+import { Heart, PartyPopper } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
 
 // Let's use a fake confetti effect since we don't have a dedicated confetti library
@@ -41,7 +41,7 @@ const ConfettiButton = () => {
           </div>
           <div className="flex justify-center">
             <Button onClick={() => setShowDialog(false)} className="bg-pink-500 hover:bg-pink-600">
-              <Confetti className="mr-2 h-5 w-5" /> I'll Try To Smile
+              <PartyPopper className="mr-2 h-5 w-5" /> I'll Try To Smile
             </Button>
           </div>
         </DialogContent>
